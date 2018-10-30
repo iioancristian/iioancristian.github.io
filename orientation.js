@@ -7,7 +7,7 @@ document.getElementById("id_x").innerHTML = e.beta;
 document.getElementById("id_y").innerHTML = e.gamma;
 document.getElementById("id_z").innerHTML = e.alpha;
   
-  var canvas = ducument.getElementById("id_canvas");
+  var canvas = document.getElementById("id_canvas");
   var context = canvas.getContext("2d");
   
   context.beginPath();
