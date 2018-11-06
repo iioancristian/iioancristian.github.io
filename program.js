@@ -1,4 +1,4 @@
-var electric = false;
+var electronic = false;
 function modifica()
 {
 document.getElementById("id_salut").innerHTML = "hello";
