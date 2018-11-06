@@ -10,6 +10,6 @@ document.getElementById("id_salut").innerHTML = "hello";
   }
   else
   {
-    document.getElementById("electric.jpg").innerHTML = "electronic.jpg";
+    document.getElementById("img_id").innerHTML = "electronic.jpg";
   }
 }
