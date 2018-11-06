@@ -1,9 +1,9 @@
-var electronic = false;
+var electronic.jpg = false;
 function modifica()
 {
 document.getElementById("id_salut").innerHTML = "hello";
   
-  if(electronic == false) {
+  if(electronic.jpg == false) {
     document.getElementById("img_id").src = "electric.jpg";
   
   }
