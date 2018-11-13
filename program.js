@@ -1,19 +1,19 @@
-var electric = false;
+var electronic = false;
 function modifica()
 {
 document.getElementById("id_salut").innerHTML = "hello";
 
   
   if(electronic == false) {
-    document.getElementById("img_id").src = "electronic.jpg";
-    electric = true;
+    document.getElementById("img_id").src = "electric.jpg";
+    electronic = true;
   
   }
   
   
   else{
-    document.getElementById("img_id").src = "electric.jpg";
-    electric = false;
+    document.getElementById("img_id").src = "electronic.jpg";
+    electronic = false;
   }
  
 }
