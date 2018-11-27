@@ -10,7 +10,7 @@ var rect = canvas.getBoundingClientRect();
 
 //var last_position.x = 0;
 //var last_position.y = 0;
-var last_position = (x: 0, y: 0,id: 0);
+var last_position = {x: 0, y: 0,id: 0};
 
 var last_position_array = [];
 
