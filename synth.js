@@ -15,7 +15,7 @@ function afisaza_voci()
 //--------------------------------------
 function vorbeste()
 {
-	var enunt = new speechSynthesiesUtterance();
+	var enunt = new SpeechSynthesiesUtterance();
 	enunt.text = document.getElementById("id_text").value;
 	enunt.language = "en-US";
 	synth.speak(enunt);
