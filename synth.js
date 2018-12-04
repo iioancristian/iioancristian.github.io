@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML="Logic version: 1"
+document.getElementById("id_logic_version").innerHTML="Logic version: 1";
 var synth = window.speechSynthesies;
 
 function afisaza_voci()
