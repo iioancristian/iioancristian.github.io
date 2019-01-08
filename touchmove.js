@@ -7,7 +7,8 @@ var svg_rect = svg.getBoundingClientRect();
 
 function on_touch_move(e)
 {
-	
+	e.preventDefault();
+
 	cerc.setAttribute("cx", e.changedTouches[0].pageX);
 	cerc.setAttribute("cy", e.changedTouches[0].pageY - svg_rect.top);
 		
