@@ -1,10 +1,10 @@
-document.getElementById("id_logic_version").innerHTML = "Logic version: 2019.02.11.0";
+document.getElementById("id_logic_version").innerHTML = "Logic version: 2019.02.11.1";
 
-var flash = instanceOfCameraControl.flashMode
+var flash = instanceOfCameraControl.capabilities.flashModes
 
 function flash()
 {
-	onSuccess( camera );
+	onSuccess();
 	
 	
 }
@@ -12,12 +12,12 @@ var options = {
   camera: navigator.mozCameras.getListOfCameras()[0]
 };
  
-function onSuccess( camera ) {
-  var capabilities = camera.camera.capabilities;
+function onSuccess(camera) {
+  var flash = camera.camera.capabilities.flashModes;
 
-  if (capabilities.flashModes.indexOf('off') > -1) {
-    capabilities.flashMode = 'off';
-  }
+  flash.forEach(function (value) {
+    console.log(value)
+  });
 };
 
-navigator.mozCameras.getCamera(options).then(onSuccess)
+navigator.mozCameras.getCamera(options).then(onSuccess);
